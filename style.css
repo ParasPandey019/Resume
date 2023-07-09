@@ -110,3 +110,81 @@ body {
     margin-top: 50px;
     text-align: justify;
 }
+
+#skills{
+    text-align: center;
+    background-color: rgb(232, 227, 227);
+    margin-top: 100px;
+    padding:40px 0px;
+    margin-bottom: 40px;
+}
+
+#skills-head, #portfolio-head{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 50px;
+}
+
+#skill-bars{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.bar{
+    width :200px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid rgb(196, 196, 196);
+    height: 1.4rem;
+    background-color: rgb(196, 196, 196);
+    margin: 20px 40px;
+}
+.progress{
+    border-radius: 20px;
+    font-size: 1.1rem;
+    height: 100%;
+    line-height: 1.4rem;
+    padding-left: 10px;
+}
+
+#HTML{
+    background-color: orange;
+    width: 90%;
+}
+
+#Cpp{
+    background-color: green;
+    width: 75%;
+}
+
+#JavaScript{
+    background-color: red;
+    width: 50%;
+}
+
+#JAVA{
+    background-color: purple;
+    width: 80%;
+}
+
+#CSS{
+    background-color: pink;
+    width: 65%;
+}
+
+
+#portfolio-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+
+.portfolio-content{
+    width: 30%;
+}
