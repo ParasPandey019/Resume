@@ -4,6 +4,8 @@ body {
     font-size: 30px;
 }
 
+
+
 /* Body Header */
 
 #body-header {
@@ -271,16 +273,28 @@ body {
 
 #experience{
     padding: 60px 0px;
+    position: relative;
 }
+
 
 #experience-head{
     color: rgb(54,126,234);
 }
+
 .timeline{
     position: relative;
     width: 75%;
     margin: auto;
     font-size: 1.1rem;
+}
+
+.centerline{
+    height: 80%;
+    width: 7.5px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background-color: rgb(54,126,234);
 }
 
 .timeline h2,.timeline h3,.timeline h4{
@@ -301,29 +315,19 @@ body {
 }
 
 .timeline-container{
-    width: 50%;
+    width: 45%;
     position: relative;
     margin: 10px;
 }
 
 .timeline-container:nth-child(even){
-    left: 53%;
+    left: 0;
 }
 
 .timeline-container:nth-child(odd){
-    right: 50px;
+    left: 52.5%;
 }
 
-.timeline::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 12%;
-    left: 48.5%;
-    height: 75%;
-    width: 7px;
-    background-color: rgb(54,126,234);
-}
 
 .timeline-container:nth-child(odd)::after{
     content: "";
@@ -333,8 +337,6 @@ body {
     height: 25px;
     background-color: rgb(54,126,234);
     border-radius: 50%;
-    right: -38px;
-    top: 50px;
 }
 
 .timeline-container:nth-child(even)::after{
@@ -345,8 +347,6 @@ body {
     height: 25px;
     background-color: rgb(54,126,234);
     border-radius: 50%;
-    left: -72px;
-    top: 50px;
 }
 
 #education{
