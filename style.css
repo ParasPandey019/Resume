@@ -288,13 +288,22 @@ body {
     font-size: 1.1rem;
 }
 
+.timeline-wrapper{
+    width: 50%;
+    position: relative;
+}
+
 .centerline{
-    height: 80%;
+    height: 77.5%;
     width: 7.5px;
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 50px;
     background-color: rgb(54,126,234);
+}
+
+#education .centerline{
+    height: 70%;
 }
 
 .timeline h2,.timeline h3,.timeline h4{
@@ -315,21 +324,21 @@ body {
 }
 
 .timeline-container{
-    width: 45%;
-    position: relative;
+    width: 80%;
+    margin: auto;
     margin: 10px;
 }
 
-.timeline-container:nth-child(even){
+.timeline-wrapper:nth-child(even){
     left: 0;
 }
 
-.timeline-container:nth-child(odd){
-    left: 52.5%;
+.timeline-wrapper:nth-child(odd){
+    left: 50%;
 }
 
 
-.timeline-container:nth-child(odd)::after{
+.timeline-wrapper:nth-child(odd)::after{
     content: "";
     display: block;
     position: absolute;
@@ -337,16 +346,22 @@ body {
     height: 25px;
     background-color: rgb(54,126,234);
     border-radius: 50%;
+    left: calc(-10% - 13.5px);
+    top: 49px;
+    border: 5px solid white;
 }
 
-.timeline-container:nth-child(even)::after{
+.timeline-wrapper:nth-child(even)::after{
     content: "";
     display: block;
     position: absolute;
     width: 25px;
     height: 25px;
     background-color: rgb(54,126,234);
+    border: 5px solid white;
     border-radius: 50%;
+    right: calc(10% - 20.5px);
+    top: 49px;
 }
 
 #education{
@@ -362,3 +377,4 @@ body {
 #education .timeline::after{
     height: 70%;
 }
+
